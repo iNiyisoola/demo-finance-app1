@@ -15,10 +15,12 @@
 		<tbody>
 			@foreach(var item in Model)
 			{
-				<tr>@item.Description</tr>
-				<tr>@item.Amount $</tr>
-				<tr>@item.Category</tr>
-				<tr>@item.Date.ToString("yyyy-mm-dd")</tr>
+				<tr>
+					<td>@item.Description</td>
+					<td>@item.Amount $</td>
+					<td>@item.Category</td>
+					<td>@item.Date.ToString("yyyy-MM-dd")</td>
+				</tr>
 			}
 		</tbody>
 	</table>
